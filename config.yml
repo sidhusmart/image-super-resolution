@@ -79,5 +79,5 @@ training_sets:
     hr_valid_dir: /content/data/DIV2K/DIV2K_valid_HR
     data_name: div2k
 weights_paths:
-  discriminator:
-  generator:
+  discriminator: false
+  generator: rdn
