@@ -80,4 +80,4 @@ training_sets:
     data_name: div2k
 weights_paths:
   discriminator: false
-  generator: rdn
+  generator: /content/weights/rdn-C6-D20-G64-G064-x2_ArtefactCancelling_epoch219.hdf5
