@@ -6,8 +6,8 @@ default:
   training_set: div2k
   test_set: sample
 log_dirs:
-  logs: ./logs
-  weights: ./weights
+  logs: /content/logs
+  weights: /content/weights
 feature_extractor:
   vgg19:
     layers_to_extract:
@@ -64,19 +64,19 @@ session:
       beta2: 0.999
       epsilon: null
 test_sets:
-  sample: ./data/input/sample
+  sample: /content/data/input/sample
 training_sets:
   custom data:
-    lr_train_dir: ./data/custom/lr/train
-    hr_train_dir: ./data/custom/hr/train
-    lr_valid_dir: ./data/custom/lr/validation
-    hr_valid_dir: ./data/custom/hr/validation
+    lr_train_dir: /content/data/custom/lr/train
+    hr_train_dir: /content/data/custom/hr/train
+    lr_valid_dir: /content/data/custom/lr/validation
+    hr_valid_dir: /content/data/custom/hr/validation
     data_name: custom
   div2k:
-    lr_train_dir: ./data/DIV2K/DIV2K_train_LR_bicubic/X2
-    hr_train_dir: ./data/DIV2K/DIV2K_train_HR
-    lr_valid_dir: ./data/DIV2K/DIV2K_valid_LR_bicubic/X2
-    hr_valid_dir: ./data/DIV2K/DIV2K_valid_HR
+    lr_train_dir: /content/data/DIV2K/DIV2K_train_LR_bicubic/X2
+    hr_train_dir: /content/data/DIV2K/DIV2K_train_HR
+    lr_valid_dir: /content/data/DIV2K/DIV2K_valid_LR_bicubic/X2
+    hr_valid_dir: /content/data/DIV2K/DIV2K_valid_HR
     data_name: div2k
 weights_paths:
   discriminator:
